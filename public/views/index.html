@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title>Cat Coins - Cat Clicker</title>
+
+		<link rel="stylesheet" href="../CSS/main.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+		</script>
+	
+	</head>
+
+	<body>
+		<div class="sectionLeft">
+			<center>
+				<div class ="scoreContainer unselectable" >
+					<p>Cat Coins: <span id = "score">0</span>  </p>
+					<p>Cat coins per second: <span id = "scorepersecond">0</span> </p>
+					<button id = "logout" onclick="logoutClicked()">logout</button >	
+				</div>
+				<br>
+				<div class="canvasdiv">
+        <canvas id="myCanvas" width="400" height="600" style="position: fixed;"></canvas>
+
+        <canvas id="myCanvas2" width="400" height="600" style="position: fixed;">
+        </canvas>
+
+    </div>
+				<div class ="unselectable" id="clicker"></div>
+			</center>
+		</div>
+
+		<div class="scrollit1">
+
+        <canvas id="sCanvas"  style="border: 7px solid black;">
+        </canvas>
+    </div>
+     
+     <div class="scrollit2">
+		<table>
+    <thead>
+    <tr>
+      <th>NAME</th>
+      <th>SCORE</th>
+    </tr>
+    </thead>   
+
+    <tbody id="tableData"></tbody>
+
+  </table>
+   </div> 
+    
+    <audio id="a" src=""></audio>
+
+		<div class="sectionRight">
+			<div id="upgradeContainer"></div>
+
+			<div id="shopContainer"></div>
+			
+		</div>
+		 <script src="../js/main.js">
+	
+		</script>
+	
+		
+    </body>
+
+</HTML>
+ 
